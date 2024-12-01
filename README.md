@@ -1,6 +1,10 @@
 ## Instructions to student.
 
-This repository contains the starting code for a lab-based exam on the serverless architecture on the AWS platform. You are required to take the following steps in preparation for this exam:
+This repository contains the starting code for a lab-based exam on the Distributed Systems module concerning IaC on the AWS platform. 
+
+### Setup
+
+You are required to take the following steps in preparation for this exam:
 
 + Clone this repository.
 + Import the project into VS Code and run the following commands:
@@ -15,15 +19,16 @@ $ git remote remove origin
 $ git remote add origin ...URL of your new repository...
 $ git push origin master
 ~~~
-+ Deploy the app to your AWS account (cdk deploy).
 
-## The App.
+### The App.
 
-The app you have deployed is very similar to the REST web API you developed in the labs. Two new DynamoDB tables are included:
+Deploy the app to your AWS account (cdk deploy).
+
+The app resembles the REST web API you developed in the labs. Two new DynamoDB tables are included:
 
 1. Movie Awards - Stores information about awards won by a movie, e.g. Oscars, Golden Globe, etc
 1. Movie Crew - Stores data about the crew associated with a movie, e.g. director, cameras, producer, etc
 
-Examine these two tables in the DynamoDB management console. In VS Code, examine all aspects of the code that created these tables, e.g. seeding, types, etc.. Also, examine the REST API stack code and the lambda functions. __Do not change the code.__
+Examine all aspects of the code related to these tables, e.g. seeding, types, etc. Also, examine the REST API stack code and the lambda functions. __Do not change the code.__
 
-When you have fully understood the app, you may destroy the stack, however, the day before the exam, redeploy the app again and leave it deployed. 
+When you have fully understood the app, you may destroy the stack. However, redeploy the app again the day before the exam and leave it deployed. 
